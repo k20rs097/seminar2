@@ -14,8 +14,16 @@ body {
 .splash-screen h1 {
   padding: 0;
   margin: auto;
+  padding: 1%;
+  width: 50%;
   color: #ffffff;
   font-size: 40px;
+}
+.z-index_0 {
+    z-index: 0;
+}
+.z-index_1 {
+    z-index: 1;
 }
 .hero, .splash-screen{
     display: flex;
@@ -28,11 +36,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-.center {
-    margin: auto;
-    align-items: center;
-}
 .hero p {
+    display: block;
     padding: 0;
     margin: 0;
     padding-bottom: 32px;
@@ -42,6 +47,11 @@ body {
 .hero .image {
     width: 300px;
     height: auto;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 .footer {    
     position: absolute;
