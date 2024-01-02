@@ -8,36 +8,14 @@
     <title>情報科学演習 Webレポート</title>
 </head>
 <body>
-    <div class="splash-screen center z-index_0" id="splash-screen">
-        <h1 class="fade-in">Hayashi Tomoya</h1>
-        <h1 class="fade-in">Seminar in Practical<br>Information Science II<br>Web-Report</h1>
-    </div>
-    <div class="hero">
-        <div class="flex-items center z-index_1">
-            <p>ようこそ！</p>
-            <img class="image" src="img/topIcon.png" alt="">
-        </div>
-    </div>
+    <section class="splash-screen">
+        <h1 class="text-align__center">Hayashi Tomoya</h1>
+        <h1>
+            <span class="fade-in__right">Seminar in Practical<br></span>
+            <span class="fade-in__right delay-time__06">Information Science II<br></span>
+            <span class="fade-in__right delay-time__12">Web Report</span>
+        </h1>
+    </section>
+    <section class="hero"></section>
 </body>
-<script>
-    const splashScreen = document.getElementById('splash-screen')
-    const ANIMATION_DURATION = 1000
-
-    splashScreen.addEventListener ('load', () => {
-        popupAnimation('fade-in', 'block')
-    })
-
-    function popupAnimation(animation, styleDisplay) {
-      if (styleDisplay === 'block') { changePopupDisplayStyle('block') }
-      historyOverlay.classList.add(animation)
-      historyPopup.classList.add(animation)
-
-      setTimeout(() => {
-        historyOverlay.classList.remove(animation)
-        historyPopup.classList.remove(animation)
-        if (styleDisplay === 'none') { changePopupDisplayStyle('none') }
-      }, ANIMATION_DURATION)
-    }
-
-</script>
 </html>

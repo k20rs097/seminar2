@@ -1,9 +1,13 @@
+@charset "utf-8";
+html {
+    font-size: 10px;
+}
 body {
     margin: 0; padding: 0;
 }
 .header {
     width: 100vw;
-    padding: 16px;
+    padding: 1.6rem;
     background-color: #ffddf2;
     border-bottom: 1px solid #ffddf2;
     color: #000000;
@@ -11,13 +15,16 @@ body {
 .margin--0 {
     padding: 0; margin: 0;
 }
+.mt--10percent {
+    margin-top: 10%;
+}
 .splash-screen h1 {
-  padding: 0;
-  margin: auto;
-  padding: 1%;
-  width: 50%;
-  color: #ffffff;
-  font-size: 40px;
+    font-size: 4.5rem;
+    margin: auto;
+    padding: 0.1rem;
+    width: 40%;
+    line-height: 4.0rem;
+    color: #ffffff;
 }
 .z-index_0 {
     z-index: 0;
@@ -25,10 +32,13 @@ body {
 .z-index_1 {
     z-index: 1;
 }
+.text-align__center {
+    text-align: center;
+}
 .hero, .splash-screen{
     display: flex;
-    justify-content: space-between;
-    width: 100vw;
+    justify-content: space-around;
+    width: 100VW;
     height: 100vh;
     background-color: #000000;
 }
@@ -48,10 +58,8 @@ body {
     width: 300px;
     height: auto;
 }
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+.block {
+    display: block;
 }
 .footer {    
     position: absolute;
