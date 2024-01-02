@@ -1,4 +1,9 @@
 @charset "utf-8";
+:root {
+    --splash-background-color: #000000;
+    --splash-text-color: #ffffff;
+    --nav-area-background-color: #ffddf2;
+}
 html {
     font-size: 10px;
 }
@@ -8,9 +13,9 @@ body {
 .header {
     width: 100vw;
     padding: 1.6rem;
-    background-color: #ffddf2;
-    border-bottom: 1px solid #ffddf2;
-    color: #000000;
+    background-color: var(--nav-area-background-color);
+    border-bottom: 1px solid var(--nav-area-background-color);
+    color: var(--splash-background-color);
 }
 .margin--0 {
     padding: 0; margin: 0;
@@ -24,7 +29,7 @@ body {
     padding: 0.1rem;
     width: 40%;
     line-height: 4.0rem;
-    color: #ffffff;
+    color: var(--splash-text-color);
 }
 .z-index_0 {
     z-index: 0;
@@ -40,7 +45,7 @@ body {
     justify-content: space-around;
     width: 100VW;
     height: 100vh;
-    background-color: #000000;
+    background-color: var(--splash-background-color);
 }
 .hero .flex-items {
     display: flex;
@@ -48,15 +53,19 @@ body {
 }
 .hero p {
     display: block;
+    text-align: center;
     padding: 0;
     margin: 0;
     padding-bottom: 32px;
-    color: #ffffff;
+    color: var(--splash-text-color);
     font-size: 30px;
 }
 .hero .image {
     width: 300px;
     height: auto;
+}
+.hero .image:hover {
+    cursor: pointer;
 }
 .block {
     display: block;
@@ -66,7 +75,7 @@ body {
     bottom: 0;
     height: 100px;
     width: 100vw;
-    background-color: #ffddf2;
+    background-color: var(--nav-area-background-color);
 }
 .content {
     height: 200px;
