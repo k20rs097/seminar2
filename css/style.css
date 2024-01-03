@@ -2,7 +2,7 @@
 :root {
     --splash-background-color: #000000;
     --splash-text-color: #ffffff;
-    --nav-area-background-color: #ffddf2;
+    --nav-area-background-color: #ffffffa6;
 }
 html {
     font-size: 10px;
@@ -10,17 +10,32 @@ html {
 body {
     margin: 0; padding: 0;
 }
-.header {
-    width: 100vw;
+header, footer {
     padding: 1.6rem;
-    background-color: var(--nav-area-background-color);
     border-bottom: 1px solid var(--nav-area-background-color);
     color: var(--splash-background-color);
 }
-.margin--0 {
-    padding: 0; margin: 0;
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-area-background-color);
+    top: 0;
+    width: 100%;
 }
-.mt--10percent {
+header h1 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+header span {
+    padding: 1.0rem;
+    font-size: 1.5rem;
+}
+footer {
+    background-color: var(--splash-background-color);
+}
+.mt__10percent {
     margin-top: 10%;
 }
 .splash-screen h1 {
@@ -31,10 +46,10 @@ body {
     line-height: 4.0rem;
     color: var(--splash-text-color);
 }
-.z-index_0 {
+.z-index__0 {
     z-index: 0;
 }
-.z-index_1 {
+.z-index__1 {
     z-index: 1;
 }
 .text-align__center {
@@ -70,13 +85,6 @@ body {
 .block {
     display: block;
 }
-.footer {    
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100vw;
-    background-color: var(--nav-area-background-color);
-}
 .content {
-    height: 200px;
+    height: 150vw;
 }
