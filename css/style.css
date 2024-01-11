@@ -12,7 +12,6 @@ body {
     margin: 0; padding: 0;
 }
 header, footer {
-    padding: 1.6rem;
     border-bottom: 1px solid var(--nav-area-background-color);
     color: var(--splash-background-color);
 }
@@ -26,6 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--nav-area-background-color);
+    transition: opacity 0.5s ease-in-out;
 }
 header h1 {
     font-weight: normal;
@@ -44,6 +44,9 @@ header a{
     text-decoration: none;
     color: var(--navbar-text-color);
 }
+header .visible {
+    opacity: 1;
+}
 header .menu-group {
     padding: 1.0rem;
 }
@@ -54,6 +57,13 @@ header .menu-item {
 footer {
     background-color: var(--splash-background-color);
 }
+footer i {
+    font-size: 10.0rem;
+    color: var(--splash-text-color);
+}
+footer i:hover {
+    cursor: pointer;
+}
 .splash-screen h1 {
     font-size: 4.5rem;
     margin: auto;
@@ -61,6 +71,9 @@ footer {
     width: 40%;
     line-height: 4.0rem;
     color: var(--splash-text-color);
+}
+.splash-screen .subject {
+    display: block;
 }
 .hero, .splash-screen{
     display: flex;
@@ -89,26 +102,39 @@ footer {
 .hero .image:hover {
     cursor: pointer;
 }
-.block {
-    display: block;
+.hero i {
+    font-size: 10.0rem;
+    color: var(--splash-text-color);
+}
+.hero i:hover {
+    cursor: pointer;
 }
 .content {
-    width: 80vw;
+    width: 70vw;
 }
 .content h1 {
     margin: 0;
     font-size: 4.0rem;
     letter-spacing: 1.5rem;
 }
+.content h2 {
+    font-size: 2.8rem;
+}
 .content p {
     overflow-wrap: break-word;
     font-size: 3.0rem;
+}
+.content .text {
+    font-size: 2.5rem;
 }
 .z-index__0 {
     z-index: 0;
 }
 .z-index__1 {
     z-index: 1;
+}
+.mt__5rem {
+    margin-top: 5.0rem;
 }
 .mt__10rem {
     margin-top: 10.0rem;
@@ -122,4 +148,13 @@ footer {
 }
 .text-align__center {
     text-align: center;
+}
+.text-align__right {
+    text-align: right;
+}
+.text-align__left {
+    text-align: left;
+}
+.block {
+    display: block;
 }

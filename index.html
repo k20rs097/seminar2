@@ -3,55 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
     <title>情報科学演習 Webレポート</title>
 </head>
 <body>
-    <header>
+    <header class="z-index__1">
         <h1 class="title"><a href="#splash-screen">情報科学演習 Webレポート</a></h1>
         <nav class="navbar">
             <ul class="menu-group mt-mb__auto">
                 <li class="menu-item"><a href="#hero">HOME</a></li>
                 <li class="menu-item"><a href="#works">授業内容</a></li>
-                <li class="menu-item"><a href="#job-hunting">就活</a></li>
+                <li class="menu-item"><a href="#job-hunting">就職活動</a></li>
+                <li class="menu-item"><a href="#graduation-thesis">卒業論文</a></li>
+                <li class="menu-item"><a href="#about">感想</a></li>
             </ul>
         </nav>
     </header>
     <section class="splash-screen" id="splash-screen">
-        <h1 class="text-align__center fade-in__right">Hayashi Tomoya</h1>
-        <h1>
-            <span class="fade-in__right">Seminar in Practical<br></span>
-            <span class="fade-in__right delay-time__06">Information Science II<br></span>
-            <span class="fade-in__right delay-time__12">Web Report</span>
+        <h1 class="name text-align__center" id="name">Hayashi Tomoya</h1>
+        <h1 class="subject" id="subject">
+            <span class="">Seminar in Practical<br></span>
+            <span class="">Information Science II<br></span>
+            <span class="">Web Report</span>
         </h1>
     </section>
     <section class="hero" id="hero">
         <div class="flex-items center mt__10rem">
             <p>ようこそ！</p>
-            <img class="image mt__10rem" id="top-icon" src="img/topIcon.png" alt="">
+            <img class="image mt__5rem" id="top-icon" src="img/topIcon.png" alt="">
+            <div class="scroll-to-content-button text-align__center">
+                <a href="#content">
+                    <i class="fa-regular fa-circle-down mt__10rem"></i>
+                </a>
+            </div>
         </div>
     </section>
-    <div class="content mr-ml__auto">
-        <section class="works mt__10rem" id="works">
-            <h1 class="title  text-align__center">WORKS</h1>
+    <div class="content mr-ml__auto" id="content">
+        <section class="works mt__10rem mb__10rem" id="works">
+            <h1 class="title  text-align__left">WORKS</h1>
             <div class="text">
-                <p>
-                    aaaaklld;ajfo;ejsflk;adjsfl;jdaslkghdlkhglkjsdlkjflksjdlfa<br>
-                    kldgasuehrkjdshkfhakshfkuhesaiuhrkjsbdhgiuhasofhkjadshgfkahsldfh<br>
-                    fkdjahfkjsdhakjfhkjsdahkjfhakjdhkf<br>
-                    fdaklsfjhlkadhslfhjlakdshljfhjsldhfjlhadslhflas<br>
-                </p>
+                <br><br><br><br><br>
             </div>
         </section>
-        <section class="job-hunting" id="job-hunting">
-            <h1 class="title text-align__center">JOB HUNTING</h1>
+        <section class="job-hunting mb__10rem" id="job-hunting">
+            <h1 class="title text-left">JOB HUNTING</h1>
+            <h2 class="sub-title">第一志望群</h2>
+            <div class="text">株式会社IHIエスキューブ</div>
+            <div class="text">株式会社ラクス</div>
+            <h2 class="sub-title">第二志望群</h2>
+            <div class="text">チームラボ株式会社</div>
+            <div class="text">株式会社うるる</div>
+            <h2 class="sub-title">第三志望群</h2>
+            <div class="text">アクサス株式会社</div>
+            <div class="text">株式会社D.I.Works</div>
+
         </section>
-        <section class="impression mb__10rem" id="impression">
-            <h1 class="title text-align__center">IMPRESSION</h1>
+        <section class="graduation-thesis mb__10rem" id="graduation-thesis">
+            <h1 class="title text-align__left">GRADUATION&ensp;THESIS</h1>
+            <div class="text">
+                <br><br><br><br><br>
+            </div>
+        </section>
+        <section class="impression mb__10rem" id="about">
+            <h1 class="title text-align__left">ABOUT</h1>
+            <h2 class="sub-title">授業内容</h2>
+            <div class="text">
+                今回は主に大富システムのデバック・アップデートを行なった。適切にコーディングを行う上で
+                システム全体の構造を把握する必要があり、コードを読んで正しく理解することの大切さを学んだ。
+                また、新機能を実装するにあたって、複数ある機能の実現方法からコード記述量、簡潔さ、再利用性
+                などに焦点を当てて実装を行なった。
+            </div>
+            <h2 class="sub-title">改善点</h2>
+            <div class="text">
+                発表の際に自分が書いたコードの説明の際に、前提となる情報を共有すること、コーディングに関しても
+                なぜこのアプローチを取ったのかを明確にすることで、より説得力のある発表ができるのではないかと感じた。<br>
+                今回の授業で発見できた改善点を今後の発表や就活などでも活かしていきたい。
+            </div>
         </section>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="scroll-to-top-button text-align__center">
+            <a href="#splash-screen">
+                <i class="fa-regular fa-circle-up"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="animation.js"></script>
 </body>
-<script src="animation.js"></script>
 </html>
