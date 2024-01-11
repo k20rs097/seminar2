@@ -43,10 +43,15 @@
         opacity: 0;
     }
 }
-
 .delay-time__06 {
     animation-delay: 0.6s;
 }
 .delay-time__12 {
     animation-delay: 1.2s;
+}
+.delay-time__18 {
+    animation-delay: 1.8s;
+}
+.delay-time__24 {
+    animation-delay: 2.4s;
 }

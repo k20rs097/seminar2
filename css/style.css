@@ -13,7 +13,7 @@ body {
 }
 header, footer {
     border-bottom: 1px solid var(--nav-area-background-color);
-    color: var(--splash-background-color);
+    color: #4c4c4c;
 }
 header {
     width: 100vw;
@@ -47,12 +47,17 @@ header a{
 header .visible {
     opacity: 1;
 }
-header .menu-group {
+.menu-group {
     padding: 1.0rem;
 }
-header .menu-item {
+.menu-item {
+    font-size: 1.5rem;
+    padding-left: 1.0rem;
     list-style: none;
     display: inline-block;
+}
+.menu-item:hover {
+    color: #494949;
 }
 footer {
     background-color: var(--splash-background-color);

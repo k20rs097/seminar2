@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
     <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
-    <title>情報科学演習 Webレポート</title>
+    <title>情報科学演習II Webレポート</title>
 </head>
 <body>
     <header class="z-index__1">
@@ -23,21 +23,19 @@
         </nav>
     </header>
     <section class="splash-screen" id="splash-screen">
-        <h1 class="name text-align__center" id="name">Hayashi Tomoya</h1>
+        <h1 class="name text-align__center fade-in" id="name">Hayashi Tomoya</h1>
         <h1 class="subject" id="subject">
-            <span class="">Seminar in Practical<br></span>
-            <span class="">Information Science II<br></span>
-            <span class="">Web Report</span>
+            <span class="fade-in delay-time__06">Seminar in Practical<br></span>
+            <span class="fade-in delay-time__12">Information Science II<br></span>
+            <span class="fade-in delay-time__18">Web Report</span>
         </h1>
     </section>
     <section class="hero" id="hero">
         <div class="flex-items center mt__10rem">
             <p>ようこそ！</p>
             <img class="image mt__5rem" id="top-icon" src="img/topIcon.png" alt="">
-            <div class="scroll-to-content-button text-align__center">
-                <a href="#content">
-                    <i class="fa-regular fa-circle-down mt__10rem"></i>
-                </a>
+            <div class="scroll-to-content-button text-align__center" id="scroll-to-content-button">
+                <i class="fa-regular fa-circle-down mt__10rem"></i>
             </div>
         </div>
     </section>
@@ -59,7 +57,6 @@
             <h2 class="sub-title">第三志望群</h2>
             <div class="text">アクサス株式会社</div>
             <div class="text">株式会社D.I.Works</div>
-
         </section>
         <section class="graduation-thesis mb__10rem" id="graduation-thesis">
             <h1 class="title text-align__left">GRADUATION&ensp;THESIS</h1>
@@ -85,10 +82,8 @@
         </section>
     </div>
     <footer>
-        <div class="scroll-to-top-button text-align__center">
-            <a href="#splash-screen">
-                <i class="fa-regular fa-circle-up"></i>
-            </a>
+        <div class="scroll-to-top-button text-align__center" id="scroll-to-top-button">
+            <i class="fa-regular fa-circle-up"></i>
         </div>
     </footer>
     <script src="animation.js"></script>
