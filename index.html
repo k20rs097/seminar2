@@ -22,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    <section class="splash-screen" id="splash-screen">
+    <section class="splash-screen height__100vh" id="splash-screen">
         <h1 class="name text-align__center fade-in" id="name">Hayashi Tomoya</h1>
         <h1 class="subject" id="subject">
             <span class="fade-in delay-time__06">Seminar in Practical<br></span>
@@ -30,7 +30,7 @@
             <span class="fade-in delay-time__18">Web Report</span>
         </h1>
     </section>
-    <section class="hero" id="hero">
+    <section class="hero height__100vh" id="hero">
         <div class="flex-items center mt__10rem">
             <p>ようこそ！</p>
             <img class="image mt__5rem" id="top-icon" src="img/topIcon.png" alt="">
@@ -42,9 +42,9 @@
     <div class="content mr-ml__auto" id="content">
         <section class="works mt__10rem mb__10rem" id="works">
             <h1 class="title  text-align__left">WORKS</h1>
-            <div class="text">
-                <br><br><br><br><br>
-            </div>
+            <h2 class="sub-title">管理システムのアップデート</h2>
+            <img src="img/screen.png" class="full-screen mb__5rem" alt=""><br>
+            <a href="html/management-system.html" class="link-button">View More</a>
         </section>
         <section class="job-hunting mb__10rem" id="job-hunting">
             <h1 class="title text-left">JOB HUNTING</h1>
@@ -60,15 +60,16 @@
         </section>
         <section class="graduation-thesis mb__10rem" id="graduation-thesis">
             <h1 class="title text-align__left">GRADUATION&ensp;THESIS</h1>
+            <h2 class="sub-title">卒業論文のテーマ(予定)</h2>
             <div class="text">
-                <br><br><br><br><br>
+                Web管理システムにおけるUIデザインの影響分析
             </div>
         </section>
         <section class="impression mb__10rem" id="about">
             <h1 class="title text-align__left">ABOUT</h1>
             <h2 class="sub-title">授業内容</h2>
             <div class="text">
-                今回は主に大富システムのデバック・アップデートを行なった。適切にコーディングを行う上で
+                今回は主に運送系企業の管理システムのデバック・アップデートを行なった。適切にコーディングを行う上で
                 システム全体の構造を把握する必要があり、コードを読んで正しく理解することの大切さを学んだ。
                 また、新機能を実装するにあたって、複数ある機能の実現方法からコード記述量、簡潔さ、再利用性
                 などに焦点を当てて実装を行なった。
@@ -82,8 +83,11 @@
         </section>
     </div>
     <footer>
-        <div class="scroll-to-top-button text-align__center" id="scroll-to-top-button">
+        <div class="scroll-to-top-button text-align__center mr-ml__auto" id="scroll-to-top-button">
             <i class="fa-regular fa-circle-up"></i>
+        </div>
+        <div class="copyright">
+            <p>(c) 2024 Hayashi Tomoya All Rights Reserved.</p>
         </div>
     </footer>
     <script src="animation.js"></script>

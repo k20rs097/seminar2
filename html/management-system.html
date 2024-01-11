@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>授業内容</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header class="z-index__1">
+        <h1 class="title"><a href="../index.html">情報科学演習 Webレポート</a></h1>
+        <nav class="navbar">
+            <ul class="menu-group mt-mb__auto">
+                <li class="menu-item"><a href="#hero">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="splash-screen height__50vh" id="splash-screen">
+        <h1 class="subject" id="subject">
+            <span class="fade-in delay-time__06">About<br></span>
+            <span class="fade-in delay-time__12">Management<br></span>
+            <span class="fade-in delay-time__18">System</span>
+        </h1>
+    </section>
+    <div class="content mr-ml__auto mt__10rem" id="content">
+        <h1 class="title">アップデート内容</h1>
+        <section class="about__ui-update mt__5rem">
+            <h2 class="sub-title">UIデザインの変更</h2>
+            <div class="text mb__5rem">
+                ボタンやアップロードエリアなどのデザインをHTML5のデフォルトのものから変更。
+                flex-boxを使用し、ダウンロード及びアップロードボタンの位置を下端揃えで固定した。
+                また、背景色をサイドバーのものと同一にし、画面全体の統一感の向上を狙っている。
+            </div>
+            <div class="flex">
+                <img src="../img/ui-before.png" alt="">
+                <i class="fa-solid fa-arrow-right"></i>
+                <img src="../img/ui-after.png" alt="">
+            </div>
+            <div class="text text-align__center">左：変更前のUI&ensp;右：変更後のUI</div>
+            <img src="../img/" alt="">
+        </section>
+        <section class="about__permission">
+            <h2 class="sub-title">権限ごとの表示切り替え</h2>
+            <div class="text mb__5rem">
+                権限によって、アップロードエリアの表示・非表示の切り替えを行えるように変更。
+            </div>
+            <div class="flex">
+                <img src="../img/permission-before.png" alt="">
+                <i class="fa-solid fa-arrow-right"></i>
+                <img src="../img/permission-after.png" alt="">
+            </div>
+            <div class="text">左：アップロード権限がある場合&ensp;右：アップロード権限がない場合</div>
+        </section>
+        <section class="about__screen">
+            <h2 class="sub-title">管理システム全体画面</h2>
+            <div class="flex">
+                <img src="../img/screen.png" class="full-screen" alt="">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="scroll-to-top-button text-align__center mr-ml__auto" id="scroll-to-top-button">
+            <i class="fa-regular fa-circle-up"></i>
+        </div>
+        <div class="copyright"></div>
+    </footer>
+    <script src="../animation.js"></script>
+</body>
+</html>

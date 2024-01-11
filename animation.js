@@ -1,13 +1,13 @@
-const topIcon = document.getElementById("top-icon");
+// const topIcon = document.getElementById("top-icon");
 const scrollToContentButton = document.getElementById("scroll-to-content-button");
 const scrollToTopButton = document.getElementById("scroll-to-top-button");
 const splashBackgroundColors = ["#000000", "#ff0000", "#0000ff", "#ffdd00", "#f000a0", "#f09000", "#00ee00"];
 const ANIMATION_DELAY_TIME = 4000;
 let index = 0;
 
-topIcon.addEventListener("click", () => {
-  document.documentElement.style.setProperty("--splash-background-color", splashBackgroundColors[index = ++index % splashBackgroundColors.length]);
-});
+// topIcon.addEventListener("click", () => {
+//   document.documentElement.style.setProperty("--splash-background-color", splashBackgroundColors[index = ++index % splashBackgroundColors.length]);
+// });
 
 scrollToContentButton.addEventListener("click", () => {
   scrollToElement("content");
